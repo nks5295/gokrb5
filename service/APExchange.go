@@ -22,7 +22,7 @@ func ValidateAPREQ(APReq messages.APReq, kt keytab.Keytab, sa string, cAddr stri
 	if err != nil {
 		return false, creds, krberror.Errorf(err, krberror.DecryptingError, "Error decrypting encpart of service ticket provided")
 	}
-	ab, err := crypto.DecryptEncPart(APReq.Authenticator, APReq.Ticket.DecryptedEncPart.Key, keyusage.AP_REQ_AUTHENTICATOR)
+	ab, err := crypto.DecryptEncPart(APReq.Authenticator, APReq.Ticket.DecryptedEncPart.Key, keyusage.TGS_REQ_PA_TGS_REQ_AP_REQ_AUTHENTICATOR)
 	if err != nil {
 		return false, creds, krberror.Errorf(err, krberror.DecryptingError, "Error decrypting authenticator")
 	}

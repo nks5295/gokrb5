@@ -53,9 +53,9 @@ func NewKeytab() Keytab {
 // GetEncryptionKey returns the EncryptionKey from the Keytab for the newest entry with the required kvno, etype and matching principal.
 func (kt *Keytab) GetEncryptionKey(nameString []string, realm string, kvno int, etype int32) (types.EncryptionKey, error) {
 	var key types.EncryptionKey
-	var t time.Time
+	//var t time.Time
 	for _, k := range kt.Entries {
-		if k.Principal.Realm == realm && len(k.Principal.Components) == len(nameString) && k.Key.KeyType == etype && (k.KVNO == uint32(kvno) || kvno == 0) && k.Timestamp.After(t) {
+		if k.Principal.Realm == realm && len(k.Principal.Components) == len(nameString) && k.Key.KeyType == etype && (k.KVNO == uint32(kvno) || kvno == 0) { //&& k.Timestamp.After(t) {
 			p := true
 			for i, n := range k.Principal.Components {
 				if nameString[i] != n {

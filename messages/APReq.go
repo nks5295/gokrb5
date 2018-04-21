@@ -72,6 +72,7 @@ func encryptAuthenticator(a types.Authenticator, sessionKey types.EncryptionKey,
 	}
 	var usage int
 	switch tkt.SName.NameType {
+	// TODO: The usage number for nametype mapping might be wrong
 	case nametype.KRB_NT_PRINCIPAL:
 		usage = keyusage.AP_REQ_AUTHENTICATOR
 	case nametype.KRB_NT_SRV_INST:
