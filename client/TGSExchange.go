@@ -71,7 +71,7 @@ func (cl *Client) GetServiceTicket(spn string) (messages.Ticket, types.Encryptio
 	}
 	s := strings.Split(spn, "/")
 	princ := types.PrincipalName{
-		NameType:   nametype.KRB_NT_PRINCIPAL,
+		NameType:   nametype.KRB_NT_SRV_INST,
 		NameString: s,
 	}
 	sess, err := cl.GetSessionFromPrincipalName(princ)
