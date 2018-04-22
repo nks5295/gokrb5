@@ -13,8 +13,8 @@ import (
 	"time"
 
 	"gopkg.in/jcmturner/dnsutils.v1"
-	"gopkg.in/jcmturner/gokrb5.v4/iana/errorcode"
-	"gopkg.in/jcmturner/gokrb5.v4/messages"
+	"github.com/nks5295/gokrb5/iana/errorcode"
+	"github.com/nks5295/gokrb5/messages"
 )
 
 func (cl *Client) resolveKDC(realm string, tcp bool) (int, map[int]string, error) {

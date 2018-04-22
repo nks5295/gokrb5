@@ -4,10 +4,10 @@ import (
 	"strings"
 	"time"
 
-	"gopkg.in/jcmturner/gokrb5.v4/iana/nametype"
-	"gopkg.in/jcmturner/gokrb5.v4/krberror"
-	"gopkg.in/jcmturner/gokrb5.v4/messages"
-	"gopkg.in/jcmturner/gokrb5.v4/types"
+	"github.com/nks5295/gokrb5/iana/nametype"
+	"github.com/nks5295/gokrb5/krberror"
+	"github.com/nks5295/gokrb5/messages"
+	"github.com/nks5295/gokrb5/types"
 )
 
 // TGSExchange performs a TGS exchange to retrieve a ticket to the specified SPN.

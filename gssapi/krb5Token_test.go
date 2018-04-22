@@ -6,11 +6,11 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/jcmturner/gokrb5.v4/credentials"
-	"gopkg.in/jcmturner/gokrb5.v4/iana/msgtype"
-	"gopkg.in/jcmturner/gokrb5.v4/messages"
-	"gopkg.in/jcmturner/gokrb5.v4/testdata"
-	"gopkg.in/jcmturner/gokrb5.v4/types"
+	"github.com/nks5295/gokrb5/credentials"
+	"github.com/nks5295/gokrb5/iana/msgtype"
+	"github.com/nks5295/gokrb5/messages"
+	"github.com/nks5295/gokrb5/testdata"
+	"github.com/nks5295/gokrb5/types"
 )
 
 const (

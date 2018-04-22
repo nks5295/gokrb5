@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"time"
 
-	"gopkg.in/jcmturner/gokrb5.v4/ndr"
+	"github.com/nks5295/gokrb5/ndr"
 )
 
 /*

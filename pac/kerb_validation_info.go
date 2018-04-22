@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"gopkg.in/jcmturner/gokrb5.v4/mstypes"
-	"gopkg.in/jcmturner/gokrb5.v4/ndr"
+	"github.com/nks5295/gokrb5/mstypes"
+	"github.com/nks5295/gokrb5/ndr"
 )
 
 // KERB_VALIDATION_INFO flags.

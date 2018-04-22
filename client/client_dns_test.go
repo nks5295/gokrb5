@@ -5,9 +5,9 @@ package client
 import (
 	"encoding/hex"
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/jcmturner/gokrb5.v4/config"
-	"gopkg.in/jcmturner/gokrb5.v4/keytab"
-	"gopkg.in/jcmturner/gokrb5.v4/testdata"
+	"github.com/nks5295/gokrb5/config"
+	"github.com/nks5295/gokrb5/keytab"
+	"github.com/nks5295/gokrb5/testdata"
 	"testing"
 )
 

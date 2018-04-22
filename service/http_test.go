@@ -12,13 +12,13 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/jcmturner/gokrb5.v4/client"
-	"gopkg.in/jcmturner/gokrb5.v4/credentials"
-	"gopkg.in/jcmturner/gokrb5.v4/iana/nametype"
-	"gopkg.in/jcmturner/gokrb5.v4/keytab"
-	"gopkg.in/jcmturner/gokrb5.v4/messages"
-	"gopkg.in/jcmturner/gokrb5.v4/testdata"
-	"gopkg.in/jcmturner/gokrb5.v4/types"
+	"github.com/nks5295/gokrb5/client"
+	"github.com/nks5295/gokrb5/credentials"
+	"github.com/nks5295/gokrb5/iana/nametype"
+	"github.com/nks5295/gokrb5/keytab"
+	"github.com/nks5295/gokrb5/messages"
+	"github.com/nks5295/gokrb5/testdata"
+	"github.com/nks5295/gokrb5/types"
 )
 
 func TestService_SPNEGOKRB_NoAuthHeader(t *testing.T) {

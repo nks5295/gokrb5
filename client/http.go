@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"strings"
 
-	"gopkg.in/jcmturner/gokrb5.v4/credentials"
-	"gopkg.in/jcmturner/gokrb5.v4/gssapi"
-	"gopkg.in/jcmturner/gokrb5.v4/krberror"
-	"gopkg.in/jcmturner/gokrb5.v4/messages"
-	"gopkg.in/jcmturner/gokrb5.v4/types"
+	"github.com/nks5295/gokrb5/credentials"
+	"github.com/nks5295/gokrb5/gssapi"
+	"github.com/nks5295/gokrb5/krberror"
+	"github.com/nks5295/gokrb5/messages"
+	"github.com/nks5295/gokrb5/types"
 )
 
 // SetSPNEGOHeader gets the service ticket and sets it as the SPNEGO authorization header on HTTP request object.

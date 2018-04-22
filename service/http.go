@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"strings"
 
-	"gopkg.in/jcmturner/gokrb5.v4/gssapi"
-	"gopkg.in/jcmturner/gokrb5.v4/keytab"
+	"github.com/nks5295/gokrb5/gssapi"
+	"github.com/nks5295/gokrb5/keytab"
 )
 
 type ctxKey int

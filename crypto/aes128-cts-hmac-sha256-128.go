@@ -6,10 +6,10 @@ import (
 	"crypto/sha256"
 	"hash"
 
-	"gopkg.in/jcmturner/gokrb5.v4/crypto/common"
-	"gopkg.in/jcmturner/gokrb5.v4/crypto/rfc8009"
-	"gopkg.in/jcmturner/gokrb5.v4/iana/chksumtype"
-	"gopkg.in/jcmturner/gokrb5.v4/iana/etypeID"
+	"github.com/nks5295/gokrb5/crypto/common"
+	"github.com/nks5295/gokrb5/crypto/rfc8009"
+	"github.com/nks5295/gokrb5/iana/chksumtype"
+	"github.com/nks5295/gokrb5/iana/etypeID"
 )
 
 // RFC https://tools.ietf.org/html/rfc8009

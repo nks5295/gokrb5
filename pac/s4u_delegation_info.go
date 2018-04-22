@@ -3,8 +3,8 @@ package pac
 import (
 	"fmt"
 
-	"gopkg.in/jcmturner/gokrb5.v4/mstypes"
-	"gopkg.in/jcmturner/gokrb5.v4/ndr"
+	"github.com/nks5295/gokrb5/mstypes"
+	"github.com/nks5295/gokrb5/ndr"
 )
 
 // S4UDelegationInfo implements https://msdn.microsoft.com/en-us/library/cc237944.aspx
